@@ -3,7 +3,7 @@ package org.example.sorting;
 import java.util.Arrays;
 
 // 참고 링크
-//
+// https://www.youtube.com/watch?v=WprjBK0p6rw
 public class QuickSort {
     public static void main(String[] args) {
         int[] array = {3, 2, 5, 0, 1, 8, 7, 6, 9, 4};
