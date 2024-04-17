@@ -1,6 +1,7 @@
 package org.example.set;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Optional;
 
 public class SimpleHashSet<E> implements SimpleSet<E> {
@@ -9,6 +10,10 @@ public class SimpleHashSet<E> implements SimpleSet<E> {
 
     public SimpleHashSet() {
         map = new HashMap<>();
+    }
+
+    public SimpleHashSet(boolean isMapLinkedHashMap) {
+        map = isMapLinkedHashMap ? new LinkedHashMap<>() : new HashMap<>();
     }
 
     public Optional<E> getElement(E e) {
