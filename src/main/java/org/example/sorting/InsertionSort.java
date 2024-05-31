@@ -7,6 +7,8 @@ public class InsertionSort {
         int n = array.length;
         for (int i = 1; i < n; i++) {
             int key = array[i];
+            System.out.println("array = " + Arrays.toString(array));
+            System.out.println("key = " + key);
             int j = i - 1;
 
             // key 보다 큰 값들을 한 칸씩 뒤로 옮김
